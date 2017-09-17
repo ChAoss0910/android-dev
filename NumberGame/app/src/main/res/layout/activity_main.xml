@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.leon_chen.numbergame.MainActivity"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_weight="0.04"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Number Guessing Game"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="329dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Choosing larger one to get 1 point, otherwise lose 1 point."
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="138dp"
+        android:layout_height="86dp"
+        android:onClick="leftBtnClick"
+        android:text="0"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_weight="0.28"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:onClick="rightBtnClick"
+        android:text="0"
+        tools:layout_editor_absoluteX="360dp"
+        tools:layout_editor_absoluteY="248dp"
+        android:layout_weight="0.48"
+        android:layout_alignBottom="@+id/leftButton"
+        android:layout_alignEnd="@+id/pointTextView"
+        android:layout_alignTop="@+id/leftButton" />
+
+    <EditText
+        android:id="@+id/pointTextView"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Score： 0"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="406dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="39dp" />
+
+</RelativeLayout>
