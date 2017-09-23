@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         View v = findViewById(R.id.content_1);
         v.getBackground().setAlpha(200);
     }
