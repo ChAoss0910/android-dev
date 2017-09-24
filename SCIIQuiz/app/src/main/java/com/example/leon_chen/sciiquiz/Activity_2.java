@@ -24,12 +24,13 @@ public class Activity_2 extends Activity {
     Button p;
     Button r;
 
-
+    View v;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+
 
         t_type = (ImageButton) findViewById(R.id.imbtn_1);
         t_type.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +42,7 @@ public class Activity_2 extends Activity {
 
             }
         });
+
 
         z_type = (ImageButton) findViewById(R.id.imbtn_2);
         z_type.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +82,6 @@ public class Activity_2 extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(Activity_2.this, Activity_t1.class);
                 startActivity(intent);
-
             }
         });
         z = (Button) findViewById(R.id.btn_z);
@@ -90,7 +91,6 @@ public class Activity_2 extends Activity {
                 Intent intent = new Intent();
                 intent.setClass(Activity_2.this, Activity_z1.class);
                 startActivity(intent);
-
             }
         });
         p = (Button) findViewById(R.id.btn_p);
@@ -113,6 +113,7 @@ public class Activity_2 extends Activity {
 
             }
         });
+
 
 
 

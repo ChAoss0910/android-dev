@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/content_t1"
-    android:background="@drawable/mm1">
+    android:background="@drawable/mm1"
+    android:id="@+id/content_t1">
 
     <RelativeLayout
         android:id="@+id/t1_top"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="The First Problem"
+            android:text="Terren Problems"
             android:textColor="#fff"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="100"
-        android:progress="33"
+        android:progress="25"
         style="?android:attr/progressBarStyleHorizontal"/>
 
     <LinearLayout
@@ -64,6 +64,7 @@
             android:layout_height="wrap_content"
             android:text="bird"
             android:background="#0091EA"
+
             android:textColor="#fff"
             android:padding="8dp"
             android:layout_marginBottom="24dp"
@@ -94,11 +95,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="quit"
-            android:background="#B71C1C"
+            android:background="#0091EA"
             android:textColor="#fff"
             android:padding="8dp"
             android:layout_marginBottom="24dp"
-            android:id="@+id/quit"/>
+            android:id="@+id/choice4"/>
     </LinearLayout>
 
 

@@ -9,8 +9,11 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button btnStart;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -24,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
 
         View v = findViewById(R.id.content_1);
