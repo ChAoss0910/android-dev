@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class Activity_t1 extends Activity{
     private Quiz_library mQuestionLibrary = new Quiz_library();
-    private TextView mScoreView;
+    //private TextView mScoreView;
     private TextView mQuestionView;
     private Button mButtonChoice1;
     private Button mButtonChoice2;
@@ -27,6 +27,7 @@ public class Activity_t1 extends Activity{
 
     private String mAnswer;
     private int mScore = 0;
+    private int currScore;
     private int mQuestionNumber = 0;
 
     ImageView l_arrow;
@@ -138,7 +139,7 @@ public class Activity_t1 extends Activity{
 
 
     private void updateScore(int point) {
-        mScoreView.setText("" + mScore);
+        currScore = mScore;
     }
 
 }

@@ -26,7 +26,7 @@ public class Activity_r1 extends Activity{
     private Button mButtonChoice2;
     private Button mButtonChoice3;
     private ProgressBar progressBar;
-
+    private int currScore;
     private String mAnswer;
     private int mScore = 0;
     private int mQuestionNumber = 0;
@@ -140,7 +140,7 @@ public class Activity_r1 extends Activity{
 
 
         private void updateScore(int point) {
-            mScoreView.setText("" + mScore);
+            currScore = mScore;
         }
 
 
