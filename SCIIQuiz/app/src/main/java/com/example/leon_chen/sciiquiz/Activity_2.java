@@ -19,6 +19,12 @@ public class Activity_2 extends Activity {
     ImageButton z_type;
     ImageButton p_type;
     ImageButton r_type;
+    Button t;
+    Button z;
+    Button p;
+    Button r;
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -66,6 +72,49 @@ public class Activity_2 extends Activity {
 
             }
         });
+
+        t = (Button) findViewById(R.id.btn_t);
+        t.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(Activity_2.this, Activity_t1.class);
+                startActivity(intent);
+
+            }
+        });
+        z = (Button) findViewById(R.id.btn_z);
+        z.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(Activity_2.this, Activity_z1.class);
+                startActivity(intent);
+
+            }
+        });
+        p = (Button) findViewById(R.id.btn_p);
+        p.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(Activity_2.this, Activity_p1.class);
+                startActivity(intent);
+
+            }
+        });
+        r = (Button) findViewById(R.id.btn_r);
+        r.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(Activity_2.this, Activity_r1.class);
+                startActivity(intent);
+
+            }
+        });
+
+
 
     }
 

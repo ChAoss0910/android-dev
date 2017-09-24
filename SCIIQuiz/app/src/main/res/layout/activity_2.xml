@@ -1,144 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/marine"
-    android:weightSum="1">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:background="@android:color/transparent">
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Please choose your main type"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:textSize="60px" />
 
 
-    </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/marine"
         android:weightSum="1">
-        <LinearLayout
-
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageButton
-                android:id="@+id/imbtn_1"
-                android:background="@drawable/oval"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/terrenicon"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="50dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
-                android:text="TERREN"
-                android:textStyle="bold"
-                android:textColor="#FFFF8800"
-                android:textSize="80px"
-                />
-        </LinearLayout>
+                android:layout_centerVertical="true"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageButton
-                android:id="@+id/imbtn_2"
-                android:background="@drawable/oval"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/zergicon"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="50dp"
                 />
+
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
-                android:text="ZERG"
-                android:textColor="#FF9933CC"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Please choose your main type"
                 android:textStyle="bold"
-                android:textSize="80px"
-                />
-        </LinearLayout>
+                android:textColor="#fff"
+                android:textSize="60px" />
 
+
+        </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
 
-            <ImageButton
-                android:id="@+id/imbtn_3"
-                android:background="@drawable/oval"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/protoss"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="50dp"
-                
-                />
-            
-            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
-                android:text="PROTOSS"
-                android:textColor="#feff4d"
-                android:textStyle="bold"
-                android:textSize="80px"/>
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imbtn_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/terrenicon"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@android:color/transparent"
+                    />
+                <Button
+                    android:id="@+id/btn_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="TERREN"
+                    android:textStyle="bold"
+                    android:textColor="#FFFF8800"
+                    android:textSize="80px"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/imbtn_4"
-                android:background="@drawable/oval"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/randicon"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="50dp"
-                />
-            
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
-                android:text="RANDOM"
-                android:textColor="#FF0099CC"
-                android:textStyle="bold"
-                android:textSize="80px"/>
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imbtn_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/zergicon"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@android:color/transparent"
+                    />
+                <Button
+                    android:id="@+id/btn_z"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="ZERG"
+                    android:textColor="#FF9933CC"
+                    android:textStyle="bold"
+                    android:textSize="80px"
+                    android:background="@android:color/transparent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imbtn_3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/protoss"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <Button
+                    android:id="@+id/btn_p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="PROTOSS"
+                    android:textColor="#feff4d"
+                    android:textStyle="bold"
+                    android:textSize="80px"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imbtn_4"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/randicon"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <Button
+                    android:id="@+id/btn_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="RANDOM"
+                    android:textColor="#FF0099CC"
+                    android:textStyle="bold"
+                    android:textSize="80px"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
         </LinearLayout>
-        
+
     </LinearLayout>
-
-</LinearLayout>
