@@ -27,8 +27,7 @@ public class Activity_r1 extends Activity{
     private ProgressBar progressBar;
 
     private String mAnswer;
-    private int mScore = 0;
-    private int currScore;
+    private static int mScore;
     private int mQuestionNumber = 0;
 
     ImageView l_arrow;
@@ -36,7 +35,7 @@ public class Activity_r1 extends Activity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_r1);
-
+        mScore = 0;
         View v = findViewById(R.id.t1_top);
         v.getBackground().setAlpha(200);
 
@@ -77,22 +76,21 @@ public class Activity_r1 extends Activity{
                 //My logic for Button goes in here
 
 
-                    progressBar.setProgress(progressBar.getProgress() + 25);
-                    if (mButtonChoice1.getText() == mAnswer) {
-                        mScore = mScore + 1;
-                        updateScore(mScore);
-                        //This line of code is optiona
-                        Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
-                    }
-                    if(mQuestionNumber == 3){
-                        Intent intent = new Intent();
-                        intent.setClass(Activity_r1.this, Activity_final.class);
-                        startActivity(intent);
-                    }
-                    else
-                        updateQuestion();
+                progressBar.setProgress(progressBar.getProgress() + 25);
+                if (mButtonChoice1.getText() == mAnswer) {
+                    mScore = mScore + 1;
+                    //This line of code is optiona
+                    Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
+                }
+                if(mQuestionNumber == 3){
+                    Intent intent = new Intent();
+                    intent.setClass(Activity_r1.this, Activity_final.class);
+                    startActivity(intent);
+                }
+                else
+                    updateQuestion();
 
 
             }
@@ -106,23 +104,22 @@ public class Activity_r1 extends Activity{
             public void onClick(View view) {
                 //My logic for Button goes in here
 
-                    progressBar.setProgress(progressBar.getProgress() + 25);
-                    if (mButtonChoice2.getText() == mAnswer) {
-                        mScore = mScore + 1;
-                        updateScore(mScore);
-                        //This line of code is optiona
-                        Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
+                progressBar.setProgress(progressBar.getProgress() + 25);
+                if (mButtonChoice2.getText() == mAnswer) {
+                    mScore = mScore + 1;
+                    //This line of code is optiona
+                    Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
 
-                    } else {
-                        Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
 
-                    }
-                    if (mQuestionNumber == 3) {
-                        Intent intent = new Intent();
-                        intent.setClass(Activity_r1.this, Activity_final.class);
-                        startActivity(intent);
-                    } else
-                        updateQuestion();
+                }
+                if (mQuestionNumber == 3) {
+                    Intent intent = new Intent();
+                    intent.setClass(Activity_r1.this, Activity_final.class);
+                    startActivity(intent);
+                } else
+                    updateQuestion();
 
 
             }
@@ -137,24 +134,22 @@ public class Activity_r1 extends Activity{
             public void onClick(View view) {
                 //My logic for Button goes in here
 
-                    progressBar.setProgress(progressBar.getProgress() + 25);
-                    if (mButtonChoice3.getText() == mAnswer) {
-                        mScore = mScore + 1;
-                        updateScore(mScore);
+                progressBar.setProgress(progressBar.getProgress() + 25);
+                if (mButtonChoice3.getText() == mAnswer) {
+                    mScore = mScore + 1;
+                    //This line of code is optiona
+                    Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
 
-                        //This line of code is optiona
-                        Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
-
-                    } else {
-                        Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
-                    }
-                    if(mQuestionNumber == 3){
-                        Intent intent = new Intent();
-                        intent.setClass(Activity_r1.this, Activity_final.class);
-                        startActivity(intent);
-                    }
-                    else
-                        updateQuestion();
+                } else {
+                    Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
+                }
+                if(mQuestionNumber == 3){
+                    Intent intent = new Intent();
+                    intent.setClass(Activity_r1.this, Activity_final.class);
+                    startActivity(intent);
+                }
+                else
+                    updateQuestion();
 
 
             }
@@ -168,24 +163,23 @@ public class Activity_r1 extends Activity{
             public void onClick(View view) {
                 //My logic for Button goes in here
 
-                    progressBar.setProgress(progressBar.getProgress() + 25);
-                    if (mButtonChoice4.getText() == mAnswer) {
-                        mScore = mScore + 1;
-                        updateScore(mScore);
-                        //This line of code is optiona
-                        Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
+                progressBar.setProgress(progressBar.getProgress() + 25);
+                if (mButtonChoice4.getText() == mAnswer) {
+                    mScore = mScore + 1;
+                    //This line of code is optional
+                    Toast.makeText(Activity_r1.this, "correct", Toast.LENGTH_SHORT).show();
 
-                    } else {
-                        Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
-                    }
-                    if(mQuestionNumber == 3){
-                        Intent intent = new Intent();
-                        intent.setClass(Activity_r1.this, Activity_final.class);
-                        startActivity(intent);
-                    }
-                    else
-                        updateQuestion();
+                } else {
+                    Toast.makeText(Activity_r1.this, "wrong", Toast.LENGTH_SHORT).show();
                 }
+                if(mQuestionNumber == 3){
+                    Intent intent = new Intent();
+                    intent.setClass(Activity_r1.this, Activity_final.class);
+                    startActivity(intent);
+                }
+                else
+                    updateQuestion();
+            }
 
         });
 
@@ -221,9 +215,7 @@ public class Activity_r1 extends Activity{
         mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
     }
 
-    private void updateScore(int point) {
-        currScore = mScore;
+    public int updateScore() {
+        return mScore;
     }
-
-
 }
